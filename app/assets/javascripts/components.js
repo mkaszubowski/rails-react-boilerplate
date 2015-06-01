@@ -1,1 +1,3 @@
-//= require_tree ./components
+React = require('react');
+
+window.TestComponent = require('./components/testComponent.js.jsx.coffee');
