@@ -22,5 +22,12 @@ module RailsReactSeed
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.browserify_rails.commandline_options = [
+      '-t [ coffeeify --extension .coffee ]', # coffeescript support
+      '-t [ reactify --extension .jsx.coffee --extension .jsx]', # react/jsx support
+      '--extension .coffee', # to be able to remove extension from require
+    ]
+
   end
 end
