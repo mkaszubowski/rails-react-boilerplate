@@ -1,5 +1,7 @@
 ## README
 
+Quickstart project template for Ruby on Rails & React.js application using Browsersify with Jest for testing javascript code.
+
 # Instalation
 1. Clone the repo
 2. Edit the config/database.deafult.yml
