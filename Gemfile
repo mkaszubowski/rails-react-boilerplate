@@ -11,6 +11,7 @@ gem 'uglifier', '2.1.1'
 gem 'jquery-rails', '3.0.4'
 gem 'turbolinks', '~> 2.3.0'
 gem 'factory_girl_rails'
+gem "haml-rails", "~> 0.9"
 
 gem 'react-rails', '~> 1.0'
 gem 'browserify-rails', '~> 0.9'
