@@ -31,7 +31,9 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
+  gem 'guard'
   gem 'guard-rspec', require: false
+  gem 'guard-shell'
   gem 'pry-rails'
 end
 

@@ -9,6 +9,13 @@
 #                          installed the spring binstubs per the docs)
 #  * zeus: 'zeus rspec' (requires the server to be started separetly)
 #  * 'just' rspec: 'rspec'
+
+group :jest do
+  guard :shell do
+    watch(%r{^app/assets/javascripts/components(.+)\.(coffee|js)$}) { `npm test` }
+  end
+end
+
 guard :rspec, cmd: 'bundle exec rspec' do
   watch(%r{^spec/.+_spec\.rb$})
   watch(%r{^lib/(.+)\.rb$})     { |m| "spec/lib/#{m[1]}_spec.rb" }
