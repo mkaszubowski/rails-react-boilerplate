@@ -31,6 +31,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'meta_request'
   gem 'guard-rspec', require: false
+  gem 'pry-rails'
 end
 
 group :test do
