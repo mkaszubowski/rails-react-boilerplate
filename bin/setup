@@ -17,7 +17,7 @@ Dir.chdir APP_ROOT do
     system "cp config/database.default.yml config/database.yml"
   end
   unless File.exists?("config/secrets.yml")
-    system "cp config/secreats.default.yml config/secrets.yml"
+    system "cp config/secrets.default.yml config/secrets.yml"
   end
 
   puts "\n== Installing Node dependencies"
